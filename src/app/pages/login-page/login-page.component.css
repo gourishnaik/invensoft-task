@@ -1,0 +1,47 @@
+.container-fluid {
+    background-color:#2f559738;
+    min-height: 100vh;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Calibri;
+}
+
+.login-content h5 {
+    margin-top: 0; 
+    text-align: center;
+    margin-top: 140px;
+    font-family: calibri;
+    font-size: 70px;
+    color: #2f5597;
+}
+.login-card{
+    width: 840px;
+    height: 440px;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.username{
+    margin-top: 80px;
+}
+.form-control{
+    width: 65%;
+    margin-left: 76px;
+    height: 55px;
+
+}
+.text-danger{
+    margin-left: 70px;
+}
+.button{
+    background: #4472C4;
+    color: #fff;
+    float: inline-end;
+    width: 443px;
+    height: 55px;
+    font-size: 25px;
+    margin-right: 105px;
+}

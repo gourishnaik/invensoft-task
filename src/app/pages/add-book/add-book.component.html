@@ -1,0 +1,133 @@
+<nav class="navbar navbar-light">
+    <h1 class="book-text">Add Book</h1>
+  </nav>
+
+
+  <div class="container input-boxes">
+    <div class="row">
+        <div class="col-6">
+            <form [formGroup]="bookForm" (ngSubmit)="save()">
+                <div class="row">
+                  <div class="col-4">
+                    <h5 class="input-text">IBSN Number</h5>
+                  </div>
+                  <div class="col-8">
+                    <input type="text" class="form-control" formControlName="ibsn">
+                    <div *ngIf="bookForm.get('ibsn').touched && bookForm.get('ibsn').invalid">
+                      <small class="text-danger" *ngIf="bookForm.get('ibsn').errors.required">IBSN is required.</small>
+                      <small class="text-danger" *ngIf="bookForm.get('ibsn').errors.minlength">Minimum there must be  5 digits.</small>
+                      <small class="text-danger" *ngIf="bookForm.get('ibsn').errors.maxlength">Maximum there must be 50 digits.</small>
+                    </div>
+                </div>
+                </div>
+              
+                <div class="row input-margin">
+                  <div class="col-4">
+                    <h5 class="input-text">Name</h5>
+                  </div>
+                  <div class="col-8">
+                    <input type="text" class="form-control" formControlName="name">
+                    <div *ngIf="bookForm.get('name').touched && bookForm.get('name').invalid">
+                        <small class="text-danger" *ngIf="bookForm.get('name').errors.required">Name is required.</small>
+                        <small class="text-danger" *ngIf="bookForm.get('name').errors.minlength">Minimum there must be  5 Alphabets.</small>
+                        <small class="text-danger" *ngIf="bookForm.get('name').errors.maxlength">Maximum there must be 50 Alphabets.</small>
+                      </div>
+                  </div>
+                </div>
+              
+                <div class="row input-margin">
+                  <div class="col-4">
+                    <h5 class="input-textdark">Author</h5>
+                  </div>
+                  <div class="col-8">
+                    <input type="text" class="form-control" formControlName="author">
+                    <div *ngIf="bookForm.get('author').touched && bookForm.get('author').invalid">
+                        <small class="text-danger" *ngIf="bookForm.get('author').errors.required">author name is required.</small>
+                        <small class="text-danger" *ngIf="bookForm.get('author').errors.maxlength">Maximum there must be 50 Alphabets.</small>
+                      </div>
+                  </div>
+                </div>
+              
+                <div class="row input-margin">
+                  <div class="col-4">
+                    <h5 class="input-text">Publication</h5>
+                  </div>
+                  <div class="col-8">
+                    <input type="text" class="form-control" formControlName="publication">
+                    <div *ngIf="bookForm.get('publication').touched && bookForm.get('publication').invalid">
+                        <small class="text-danger" *ngIf="bookForm.get('publication').errors.required">publication name is required.</small>
+                        <small class="text-danger" *ngIf="bookForm.get('publication').errors.minlength">Minimum there must be  5 Alphabets.</small>
+                        <small class="text-danger" *ngIf="bookForm.get('publication').errors.maxlength">Maximum there must be 50 Alphabets.</small>
+                      </div>
+                  </div>
+                </div>
+              
+                <div class="row input-margin">
+                  <div class="col-4">
+                    <h5 class="input-text">Details</h5>
+                  </div>
+                  <div class="col-8">
+                    <textarea class="form-control text-area" rows="5" formControlName="details"></textarea>
+                    <div *ngIf="bookForm.get('details').touched && bookForm.get('details').invalid">
+                        <small class="text-danger" *ngIf="bookForm.get('details').errors.required">publication name is required.</small>
+                        <small class="text-danger" *ngIf="bookForm.get('details').errors.minlength">Minimum there must be  5 Alphabets.</small>
+                        <small class="text-danger" *ngIf="bookForm.get('details').errors.maxlength">Maximum there must be 250 Alphabets.</small>
+                      </div>
+                  </div>
+                </div>
+              
+                <div class="row input-margin">
+                  <div class="col-4">
+                    <h5 class="input-text">Qty.</h5>
+                  </div>
+                  <div class="col-8">
+                    <input type="number" class="form-control" formControlName="quantity"min="1" max="5">
+                    <div *ngIf="bookForm.get('quantity').touched && bookForm.get('quantity').invalid">
+                        <small class="text-danger" *ngIf="bookForm.get('quantity').errors.required">Quantity is required.</small>
+                        <small class="text-danger" *ngIf="bookForm.get('quantity').errors.min">Minimum  Quantity must be 1.</small>
+                        <small class="text-danger" *ngIf="bookForm.get('quantity').errors.max">Maximum Quantity must be  5.</small>
+                      </div>
+                  </div>
+                </div>
+              
+                <div class="row input-margin">
+                  <div class="col-4">
+                    <h5 class="input-textdark">Price</h5>
+                  </div>
+                  <div class="col-8">
+                    <input type="number" class="form-control" formControlName="price">
+                      <div *ngIf="bookForm.get('price').touched && bookForm.get('price').invalid">
+                        <small class="text-danger" *ngIf="bookForm.get('price').errors.required">Price is required.</small>
+                        <small class="text-danger" *ngIf="bookForm.get('price').errors.min">Minimum price must be 10.</small>
+                        <small class="text-danger" *ngIf="bookForm.get('price').errors.max">Maximum price must not be more than 99999.</small>
+                      </div>
+                
+                  </div>
+                </div>
+              
+                <div class="row input-margin">
+                  <div class="col-4">
+                    <h5 class="input-textdark">Branch</h5>
+                  </div>
+                  <div class="col-8">
+                    <select class="form-select" formControlName="branch">
+                      <option selected></option>
+                      <option value="IT">IT</option>
+                      <option value="Civil">Civil</option>
+                      <option value="Mechanical">Mechanical</option>
+                    </select>
+                    <div *ngIf="bookForm.get('branch').touched && bookForm.get('branch').invalid">
+                        <small class="text-danger" *ngIf="bookForm.get('branch').errors.required">Please select Branch.</small>
+                      </div>
+                  </div>
+                </div>
+              
+                <button type="submit" class="submit">Submit</button>
+              </form>
+              
+        </div>
+        <div class="col-6">
+            
+        </div>
+    </div>
+</div>

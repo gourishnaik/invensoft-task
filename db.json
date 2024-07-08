@@ -1,0 +1,41 @@
+{
+  "studentdata": [
+    {
+      "id": "d89d",
+      "ibsn": "ABGWN1262",
+      "name": "Angular times",
+      "author": "james gosling",
+      "publication": "2024AAH",
+      "details": "best book",
+      "quantity": 4,
+      "price": 19222,
+      "branch": "IT"
+    },
+    {
+      "id": "bdf2",
+      "ibsn": "2024BAHHTA",
+      "name": "bootstrap tuto",
+      "author": "Gourish naik",
+      "publication": "2025-AH",
+      "details": "try this out one of our best",
+      "quantity": 1,
+      "price": 1123,
+      "branch": "IT"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

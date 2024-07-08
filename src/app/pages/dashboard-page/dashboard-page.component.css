@@ -1,0 +1,78 @@
+.navbar{
+    background-color: #2F5597;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+.dashboard-text{
+  margin: 0;
+  text-align: center;
+  margin: 0;
+  font-family: Calibri;
+  font-size: 52px;
+  color: #fff;
+
+}
+.container-fluid{
+    margin-top: 20px;
+}
+.icon-btn{
+    margin-left: 120px;
+    width: 175px;
+    font-size: 24px;
+    font-family: calibri;
+    margin-top: 35px;
+}
+.all-icon{
+    font-size: 52px;
+    color: #2F5597;
+    cursor: pointer;
+
+}
+.icon-title{
+    font-size: 24px;
+    position: absolute;
+    left: 215px;
+    margin-top: -55px;
+}
+.card{
+    height: 350px;
+    width: 500px;
+
+}
+.bar-chart{
+    background: url(../../../assets/graph.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+.pie-chart{
+    background: url(../../../assets/books.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.graphs{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.book-sec{
+    font-family: Calibri;
+    margin-top: 15px;
+    font-weight: 700;
+}
+td{
+    height: 40px;
+}
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid green;
+}
+th{
+    font-family: calibri;
+    font-size: 18px;
+}

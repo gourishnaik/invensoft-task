@@ -1,0 +1,37 @@
+.navbar{
+    background-color: #2F5597;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.deletebook-text{
+    margin: 0;
+    text-align: center;
+    margin: 0;
+    font-family: Calibri;
+    font-size: 52px;
+    color: #fff;
+  
+  }
+.fa-times{
+    color: red;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 28px;
+}
+  td{
+    height: 40px;
+}
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid green;
+}
+th{ 
+    font-family: calibri;
+    font-size: 18px;
+}
+td{
+    font-family: calibri;
+    font-size: 18px;
+}

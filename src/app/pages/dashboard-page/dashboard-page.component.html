@@ -1,0 +1,98 @@
+<nav class="navbar navbar-light">
+    <h1 class="dashboard-text">Dashboard</h1>
+  </nav>
+
+  <!-- content -->
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <div class="icon-btn">
+               
+                <i class="fa fa-plus all-icon" routerLink="/add-book"> </i>
+                <h5 class="icon-title">Add Book</h5>
+            </div>
+
+            <div class="icon-btn">
+               
+                <i class="fas fa-times all-icon"routerLink="/delete-user"></i>
+                <h5 class="icon-title">Delete book</h5>
+            </div>
+
+            <div class="icon-btn">
+                <i class="fa fa-regular fa-file all-icon"routerLink="/view-book"></i>
+                <h5 class="icon-title">View books</h5>
+            </div>
+
+            <div class="icon-btn">
+                <i class="fa fa-solid fa-user all-icon"></i>
+                <h5 class="icon-title">Add student</h5>
+            </div>
+
+            <div class="icon-btn">
+                <i class="fa fa-solid fa-book all-icon"></i>
+                <h5 class="icon-title">Issue book</h5>
+            </div>
+
+            <div class="icon-btn">
+            <i class="fa fa-solid fa-arrow-left all-icon"></i>
+                <h5 class="icon-title">Return book</h5>
+            </div>
+
+            <div class="icon-btn">
+                <i class="fa fa-solid fa-folder all-icon"></i>
+                <h5 class="icon-title">Reports</h5>
+                </div>
+
+        
+
+        </div>
+        <div class="col-8">
+            <div class="graphs">
+
+         
+          <div class="card">
+            <div class="bar-chart">
+
+            </div>
+
+          </div>
+          <div class="card">
+             <div class="pie-chart">
+                
+            </div>
+          </div>
+        </div>
+
+        <h5 class="book-sec">Issued book summary</h5>
+
+        <div class="container mt-5">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>ISBN</th>
+                        <th>Book name</th>
+                        <th>Author</th>
+                        <th>Roll No.</th>
+                        <th>Name</th>
+                        <th>Issued on</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr  *ngFor="let row of rows; let i = index">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                  
+                  
+                  
+                  
+                </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+  </div>
