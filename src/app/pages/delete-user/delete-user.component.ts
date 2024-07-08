@@ -26,8 +26,6 @@ export class DeleteUserComponent implements OnInit{
       alert('Deleted successfully');
       this.getAllbookings()
     });
-  }else{
-    alert("something went wrong")
   }
   }
 }
